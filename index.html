@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Please fill in the following fields to validate your identity. When you
+        are done, press Submit.
+      </p>
+    </header>
+    <main>
+      <form action="" id="survey-form">
+        <fieldset>
+          <div class="form-group">
+            <label for="name" id="name-label">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email" id="email-label">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="user@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="number" id="number-label">Age:</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="For example: 30"
+              min="13"
+              max="120"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="form-group">
+            <label for="" id="dropdown"></label>
+            <select name="" id="g"></select>
+          </div>
+        </fieldset>
+        <div class="form-group"></div>
+        <div class="form-group"></div>
+      </form>
+    </main>
+  </body>
+</html>
