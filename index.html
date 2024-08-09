@@ -10,8 +10,8 @@
     <header>
       <h1 id="title">Survey Form</h1>
       <p id="description">
-        Please fill in the following fields to validate your identity. When you
-        are done, press Submit.
+        Please fill in the following fields to validate your identity.<br />
+        When you are done, press Submit.
       </p>
     </header>
     <main>
@@ -42,19 +42,81 @@
               name="number"
               id="number"
               placeholder="For example: 30"
-              min="13"
+              min="18"
               max="120"
+              required
             />
           </div>
         </fieldset>
         <fieldset>
           <div class="form-group">
-            <label for="" id="dropdown"></label>
-            <select name="" id="g"></select>
+            <label for="dropdown" id="">Favorite social network:</label>
+            <select name="" id="dropdown">
+              <option value="">Select one</option>
+              <option value="">Facebook</option>
+              <option value="">X (Twitter)</option>
+              <option value="">Instagram</option>
+              <option value="">YouTube</option>
+              <option value="">WhatsApp</option>
+            </select>
           </div>
         </fieldset>
-        <div class="form-group"></div>
-        <div class="form-group"></div>
+        <fieldset>
+          <label for="">What's your genre? </label>
+
+          <div class="form-group nospace">
+            <input type="radio" name="genre" id="female" /> Female
+          </div>
+          <div class="form-group nospace">
+            <input type="radio" name="genre" id="male" /> Male
+          </div>
+          <div class="form-group nospace">
+            <input type="radio" name="genre" id="not" /> Prefer not to say
+          </div>
+          <br />
+          <br />
+
+          <label for="hobbies">Which are your hobbies?</label>
+          <div class="form-group nospace">
+            <input type="checkbox" name="hobbies" value="music" /> Music
+          </div>
+          <div class="form-group nospace">
+            <input type="checkbox" name="hobbies" value="instruments" />
+            Instruments
+          </div>
+          <div class="form-group nospace">
+            <input type="checkbox" name="hobbies" value="videogames" />
+            Videogames
+          </div>
+          <div class="form-group nospace">
+            <input type="checkbox" name="hobbies" value="food" /> Food
+          </div>
+          <div class="form-group nospace">
+            <input type="checkbox" name="hobbies" value="sports" /> Sports
+          </div>
+          <div class="form-group nospace">
+            <input type="checkbox" name="hobbies" value="science" /> Science
+          </div>
+          <div class="form-group nospace">
+            <input type="checkbox" name="hobbies" value="socialmedia" /> Social
+            Media
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="form-group">
+            <label for="pressent">Tell us about yourself: </label>
+            <textarea
+              name=""
+              id="pressent"
+              placeholder="I'm Fernando, I love cats..."
+            ></textarea>
+          </div>
+        </fieldset>
+        <fieldset class="noborder">
+          <div class="form-group">
+            <input type="submit" value="Submit" id="submit" />
+          </div>
+        </fieldset>
       </form>
     </main>
   </body>
